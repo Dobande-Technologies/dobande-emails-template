@@ -119,6 +119,13 @@ footer {
     font-weight: 400;
     color: #061047;
     line-height: 36px;
+    width: 100%;
+}
+
+
+#icons {
+    right: 0;
+
 }
 
 #icons img {
