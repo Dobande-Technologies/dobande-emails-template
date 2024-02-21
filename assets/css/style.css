@@ -3,6 +3,10 @@ body{
     padding: 200px;
     font-family: "Rethink Sans", sans-serif;
     width: 950px;
+    font-weight: 500;
+        line-height: 36px;
+        font-size: 24px;
+        color: #061047;
   
     }
 
@@ -108,4 +112,25 @@ body{
 
     #icons:last-child{
         margin-right: 0px;
+    }
+
+    #otp{
+
+        height: 125px;
+        width: 760px;
+        margin-top: 50px;
+      
+        background-color: #F6F7FF;
+        border-radius: 12px;
+    }
+
+    #otp h1{
+        font-size: 48px;
+        font-weight: 700;
+        color: #061047;
+        line-height: 125px;  
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        justify-content: center;
     }
