@@ -1,0 +1,111 @@
+body{
+    background-color: #F6F7FF;
+    padding: 200px;
+    font-family: "Rethink Sans", sans-serif;
+    width: 950px;
+  
+    }
+
+#mega_quest_logo{
+    width: 298px;
+    height: 55.33px;    
+}
+
+#main-content {
+    background-color: white;
+    margin-top: 30px;
+    padding: 50px;
+    border-radius: 12px;
+}
+ #main-content h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;}
+
+    #intro{
+        font-weight: 500;
+        line-height: 36px;
+        font-size: 24px;
+        color: #061047;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #grid{
+        display: inline-grid;
+        justify-self: center;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+        column-gap: 20px;
+        color: white;
+    }
+
+    .grid-element{
+        padding: 20px;
+        border-radius: 12px;
+        height: 224px;
+        width: 372;
+        font-weight: 500;
+        font-size: 24px;
+        color: white;
+    }
+
+    #element1{
+        background-color: #3D4EF6;
+    }
+
+    #element2{
+        background-color: #8517F3;
+    }
+
+    #element3{
+        background-color: #0EF7A3;
+    }
+
+    #element4{
+        background-color: #F7A00E;
+    }
+
+    #cta{
+        margin-top: 50px;
+        border-radius: 12px;
+        background-color: #3D4EF6;
+        border-style: none;
+        height: 56px;
+        line-height: 56px ;
+        color: white;
+        font-size: 24px;
+        font-weight: 500;
+        width: 70%;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    #signature{
+        margin-top: 50px;
+        font-size: 24px;
+        font-weight: 500;
+        color: #061047;
+        line-height: 36px;  
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        font-size: 20px;
+        font-weight: 400;
+        color: #061047;
+        line-height: 36px;  
+    }
+
+    #icons img{
+      
+
+        margin-right: 20px;
+     
+    }
+
+    #icons:last-child{
+        margin-right: 0px;
+    }
