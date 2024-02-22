@@ -8,7 +8,7 @@ body {
 
 
 #content {
-    padding: 100px 0px 100px 0px;
+    padding: 10% 0px 10% 0px;
 
     font-family: "Rethink Sans", sans-serif;
     /* width: 950px; */
@@ -24,6 +24,11 @@ body {
     
    
 
+}
+
+a {
+    display: inline-flex;
+    
 }
 
 #mega_quest_logo {
