@@ -2,16 +2,15 @@ body {
     background-color: #F6F7FF;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
 
 }
 
 
 #content {
     padding: 10% 0px 10% 0px;
-
     font-family: "Rethink Sans", sans-serif;
-    /* width: 950px; */
     font-weight: 500;
     line-height: 36px;
     font-size: 24px;
@@ -34,6 +33,7 @@ a {
 #mega_quest_logo {
     width: 298px;
     height: 55.33px;
+    align-items: start;
 }
 
 #main-content {
@@ -54,6 +54,7 @@ a {
     line-height: 38px;
     font-size: 24px;
     color: #061047;
+    margin-left: 5px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -71,7 +72,7 @@ a {
     padding: 20px;
     border-radius: 12px;
     height: 224px;
-    width: 372;
+    width: 372px;
     font-weight: 500;
     font-size: 24px;
     color: white;
@@ -87,6 +88,7 @@ a {
 
 #element3 {
     background-color: #0EF7A3;
+    color: black;
 }
 
 #element4 {
@@ -118,13 +120,15 @@ a {
 
 footer {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 50px;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 400;    
     color: #061047;
     line-height: 36px;
-    width: 100%;
+    width: -webkit-fill-available;
+    
 }
 
 
@@ -163,4 +167,15 @@ footer {
     margin-left: 50px;
     margin-bottom: 20px;
     justify-content: center;
+}
+
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
 }
