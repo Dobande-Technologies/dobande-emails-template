@@ -8,370 +8,390 @@
     <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
         rel="stylesheet">
 
-        <style>
-            body {
-                background-color: #F6F7FF;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background-image: url(https://megaquest-s3-bucket.s3.us-east-2.amazonaws.com/email-templates/assets/img/header_img.png);
-                background-repeat: no-repeat;
-                background-position: top;
-                background-position-x: center;  
-            
+    <style>
+        body {
+            background-color: #F6F7FF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(https://megaquest-s3-bucket.s3.us-east-2.amazonaws.com/email-templates/assets/img/header_img.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-position-x: center;
+
+        }
+
+
+        #content {
+            padding: 10% 0px 10% 0px;
+            font-family: "Rethink Sans", sans-serif;
+            font-weight: 500;
+            line-height: 36px;
+            font-size: 24px;
+            color: #061047;
+            border: 10px solid transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+
+
+
+        }
+
+        a {
+            display: inline-flex;
+
+        }
+
+        #mega_quest_logo {
+            width: 298px;
+            height: 55.33px;
+            align-items: start;
+        }
+
+        #main-content {
+            background-color: white;
+            margin-top: 30px;
+            padding: 10%;
+            border-radius: 12px;
+        }
+
+        #main-content>h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+
+        #intro {
+            font-weight: 500;
+            line-height: 38px;
+            font-size: 24px;
+            color: #061047;
+            margin-left: 5px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        #grid {
+            display: inline-grid;
+            justify-self: center;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            column-gap: 20px;
+            color: white;
+        }
+
+        .grid-element {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+            border-radius: 12px;
+            max-height: 224px;
+            max-width: 372px;
+            font-weight: 500;
+            font-size: 24px;
+            color: white;
+        }
+
+        .grid-element>h1 {
+            margin-bottom: 0;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 36px;
+        }
+
+        .grid-element>p {
+            margin-bottom: 0;
+            font-weight: 500px;
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        #element1 {
+            background-color: #3D4EF6;
+        }
+
+        #element2 {
+            background-color: #8517F3;
+        }
+
+        #element3 {
+            background-color: #0EF7A3;
+            color: black;
+        }
+
+        #element4 {
+            background-color: #F7A00E;
+        }
+
+        #cta {
+            margin-top: 50px;
+            border-radius: 12px;
+            background-color: #3D4EF6;
+            border-style: none;
+            height: 56px;
+            line-height: 56px;
+            color: white;
+            font-size: 24px;
+            font-weight: 500;
+            padding-left: 40;
+            padding-right: 40;
+            /* width: 70%; */
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #cta a {
+            color: white;
+
+            text-decoration: none;
+        }
+
+        #signature {
+            margin-top: 50px;
+            font-size: 24px;
+            font-weight: 500;
+            color: #061047;
+            line-height: 36px;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-between;
+            align-content: flex-start;
+            margin-top: 100px;
+
+            color: #061047;
+            width: 100%;
+
+        }
+
+        footer>div {
+            width: 45%;
+        }
+
+        footer>div>p {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+
+        }
+
+        footer>div:last-child {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        #icons img {
+
+            width: 22;
+            height: 22;
+            margin-right: 15px;
+
+
+        }
+
+        #icons img:last-child {
+            margin-right: 0px;
+        }
+
+
+
+
+        #otp {
+
+            height: 125px;
+            margin-top: 50px;
+            background-color: #F6F7FF;
+            border-radius: 12px;
+        }
+
+        #otp>h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #061047;
+            line-height: 125px;
+            margin-top: 20px;
+            margin-left: 50px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        #link {
+            color: #3D4EF6;
+            text-decoration: underline;
+            display: flex;
+        }
+
+
+        @media only screen and (max-width: 1200px) {
+            /*Tablets [601px -> 1200px]*/
+        }
+
+        @media only screen and (max-width: 600px) {
+            /*Big smartphones [426px -> 600px]*/
+        }
+
+        @media only screen and (max-width: 425px) {
+            /*Small smartphones [325px -> 425px]*/
+
+            #mega_quest_logo {
+                width: 111px;
+                height: 21px;
             }
 
-           
-            
-            
-            #content {
-                padding: 10% 0px 10% 0px;
-                font-family: "Rethink Sans", sans-serif;
-                font-weight: 500;
-                line-height: 36px;
-                font-size: 24px;
-                color: #061047;
-                border: 10px solid transparent;
-                display: flex;
-                flex-direction: column;
-                align-items: start;
-                justify-content: center;
-                
-               
-            
-            }
-            
-            a {
-                display: inline-flex;
-                
-            }
-            
-            #mega_quest_logo {
-                width: 298px;
-                height: 55.33px;
-                align-items: start;
-            }
-            
             #main-content {
-                background-color: white;
-                margin-top: 30px;
-                padding: 10%;
-                border-radius: 12px;
+                padding: 5%;
             }
-            
+
             #main-content>h1 {
-                font-size: 36px;
+                font-size: 18px;
                 font-weight: 700;
-                margin-bottom: 50px;
+                margin-bottom: 0px;
             }
-            
+
+
+
+
+
             #intro {
                 font-weight: 500;
                 line-height: 38px;
-                font-size: 24px;
+                font-size: 18px;
                 color: #061047;
                 margin-left: 5px;
-                margin-bottom: 20px;
-                margin-top: 20px;
+
             }
-            
+
+
             #grid {
                 display: inline-grid;
                 justify-self: center;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
                 gap: 20px;
                 column-gap: 20px;
                 color: white;
             }
-            
+
+
             .grid-element {
-                padding-left: 30px;
-                padding-right:30px;
-                padding-bottom: 30px;
+                padding-left: 10px;
+                padding-right: 10px;
                 border-radius: 12px;
-                max-height: 224px;
-                max-width: 372px; 
-                font-weight: 500;
-                font-size: 24px;
+                max-height: fit-content;
+                max-width: 372px;
+
                 color: white;
             }
-            .grid-element>h1 {
-                margin-bottom: 0;
-                font-weight: 600;
-                font-size: 40px;
-                line-height: 36px;
-        }
 
-.grid-element>p {
-                margin-bottom: 0;
-                font-weight: 500px;
+            .grid-element>h1 {
+
+                font-weight: 600;
                 font-size: 24px;
-                line-height: 36px;        }
-            
-            #element1 {
-                background-color: #3D4EF6;
+                line-height: 36px;
             }
-            
-            #element2 {
-                background-color: #8517F3;
+
+            .grid-element>p {
+
+                font-weight: 500px;
+                font-size: 12px;
+                line-height: 15px;
             }
-            
-            #element3 {
-                background-color: #0EF7A3;
-                color: black;
-            }
-            
-            #element4 {
-                background-color: #F7A00E;
-            }
-            
+
             #cta {
-                margin-top: 50px;
-                border-radius: 12px;
+                border-radius: 7px;
                 background-color: #3D4EF6;
                 border-style: none;
-                height: 56px;
-                line-height: 56px;
+                height: 33px;
+                line-height: 33px;
                 color: white;
-                font-size: 24px;
+                font-size: 12px;
                 font-weight: 500;
-                padding-left: 40;
-                padding-right: 40;
-                /* width: 70%; */
+                padding-left: 20;
+                padding-right: 20;
+                width: 100%;
                 text-align: center;
                 cursor: pointer;
             }
-            
+
             #cta a {
                 color: white;
-              
                 text-decoration: none;
             }
-            
+
             #signature {
-                margin-top: 50px;
-                font-size: 24px;
+                margin-top: 20px;
+                font-size: 12px;
                 font-weight: 500;
                 color: #061047;
-                line-height: 36px;
+                line-height: 18px;
             }
-            
+
             footer {
                 display: flex;
                 flex-direction: row;
+
                 justify-content: space-between;
-                margin-top: 100px;
-                font-size: 20px;
-                font-weight: 400;    
+                align-content: flex-start;
+                margin-top: 30px;
+                font-size: 12px;
+                font-weight: 400;
                 color: #061047;
-                line-height: 36px;
-                width: -webkit-fill-available;
-                
+                width: 100%;
+
             }
-            
-            
-            #icons {
-                right: 0;
-            
+
+            footer>div {
+                width: 45%;
             }
-            
+
+            footer>div>p {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 15px;
+            }
+
+            footer>div:last-child {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
             #icons img {
-            
-            
-                margin-right: 20px;
-            
+
+                height: 22px;
+                width: 22px;
+
             }
-            
-            #icons:last-child {
+
+            #icons img:last-child {
                 margin-right: 0px;
             }
-            
-            #otp {
-            
-                height: 125px;
-                margin-top: 50px;
-                background-color: #F6F7FF;
-                border-radius: 12px;
-            }
-            
-            #otp h1 {
-                font-size: 48px;
-                font-weight: 700;
-                color: #061047;
-                line-height: 125px;
-                margin-top: 20px;
-                margin-left: 50px;
-                margin-bottom: 20px;
-                justify-content: center;
-            }
-            
-            #link{
-                color: #3D4EF6;
-                text-decoration: underline;
-                display: flex;
-            }
-            
-            
-            @media only screen and (max-width: 1200px){
-                /*Tablets [601px -> 1200px]*/
-            }
-            @media only screen and (max-width: 600px){
-                /*Big smartphones [426px -> 600px]*/
-            }
-            @media only screen and (max-width: 425px){
-                /*Small smartphones [325px -> 425px]*/
-              
-                #mega_quest_logo {
-                    width: 111px;
-                    height: 21px;
-                }
-
-                #main-content {
-                    padding: 5%;
-                }
-
-                #main-content>h1 {
-                    font-size: 18px;
-                    font-weight: 700;
-                    margin-bottom: 0px;
-                }
 
 
 
 
 
-                #intro {
-                    font-weight: 500;
-                    line-height: 38px;
-                    font-size: 18px;
-                    color: #061047;
-                    margin-left: 5px;
-                 
-                }
-
-
-                #grid {
-                    display: inline-grid;
-                    justify-self: center;
-                    grid-template-columns: 1fr;
-                    gap: 20px;
-                    column-gap: 20px;
-                    color: white;
-                }
-                
-              
-                .grid-element {
-                    padding-left: 10px;
-                    padding-right:10px;
-                    border-radius: 12px;
-                    max-height: fit-content;
-                    max-width: 372px; 
-                   
-                    color: white;
-                }
-
-                .grid-element>h1 {
-                    
-                    font-weight: 600;
-                    font-size: 24px;
-                    line-height: 36px;
-                }
-
-                .grid-element>p {
-                    
-                    font-weight: 500px;
-                    font-size: 12px;
-                    line-height: 15px;        
-                }
-
-                #cta {
-                    border-radius: 7px;
-                    background-color: #3D4EF6;
-                    border-style: none;
-                    height: 33px;
-                    line-height: 33px;
-                    color: white;
-                    font-size: 12px;
-                    font-weight: 500;
-                    padding-left: 20;
-                    padding-right: 20;
-                     width: 100%; 
-                    text-align: center;
-                    cursor: pointer;
-                }
-
-                #cta a {
-                    color: white;
-                    text-decoration: none;
-                }
-            
-                #signature {
-                    margin-top: 20px;
-                    font-size: 12px;
-                    font-weight: 500;
-                    color: #061047;
-                    line-height: 36px;
-                }
-
-                footer {
-                    display: flex;
-                    flex-direction: row;
-                    
-                    justify-content: space-between;
-                    align-content: flex-start;
-                    margin-top: 30px;
-                    font-size: 12px;
-                    font-weight: 400;    
-                    color: #061047;
-                    width: 100%;
-                    
-                }
-
-                footer>div{
-                    width: 45%;
-                }
-
-                footer>div>p{
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    font-size: 12px;
-                    font-weight: 400;
-                    line-height: 15px;
-                }
-
-                footer>div:last-child {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: flex-end;
-                }               
-
-                #icons img {
-                
-                height: 24px;
-                width: 24px;
-                
-                }
-
-                #icons img:last-child {
-                    margin-right: 0px;
-                }
 
 
 
-              
-            
-                
-            
-            
-            
-             
-            
-            
-               
-            }
-            </style>
-            
+
+
+
+
+
+        }
+    </style>
+
 </head>
 
 <body>
@@ -380,21 +400,24 @@
     </div> -->
     <div id="content">
         <div>
-            <img id="mega_quest_logo" src="https://megaquest-s3-bucket.s3.us-east-2.amazonaws.com/email-templates/assets/img/mega_quest_logo.png" alt="Dobande Logo">
+            <img id="mega_quest_logo"
+                src="https://megaquest-s3-bucket.s3.us-east-2.amazonaws.com/email-templates/assets/img/mega_quest_logo.png"
+                alt="Dobande Logo">
         </div>
-        
+
 
         <div id="main-content">
-            <h1 id="title-mega" >Welcome to MegaQuest</h1>
+            <h1 id="title-mega">Welcome to MegaQuest</h1>
 
             <div id="intro">
                 <p>Hello <span id="explorer-name"> [Explorer Name]</span> </p>
                 <p>Welcom to MegaQuest ! </p>
-               <p>
-                We are thrilled to have you on board. Explore the endless 
-                possibilities and embark on a journey with MegaQuest. 
-                To get started, check out our user guide for a smooth experience. 
-               </p>
+                <p>
+                    We are thrilled to have you with us! <br>
+                    There is a lot we're eager to equip you with on your quest to uncover rich insights from data. <br>
+                    We've curated a helpful 4 part guide that will enable you get up to speed quickly. You can download
+                    it below.
+                </p>
             </div>
 
             <div id="grid">
@@ -407,25 +430,25 @@
                 <div id="element2" class="grid-element">
                     <h1>02</h1>
 
-                    <p >
+                    <p>
                         Lorem ipsum dolor sit amet consectetur. Vene integer ut integer gravida et sodales.
                     </p>
                 </div>
                 <div id="element3" class="grid-element">
                     <h1>03</h1>
 
-                    <p >
+                    <p>
                         Lorem ipsum dolor sit amet consectetur. Vene integer ut integer gravida et sodales.
                     </p>
                 </div>
                 <div id="element4" class="grid-element">
                     <h1>04</h1>
 
-                    <p >
+                    <p>
                         Lorem ipsum dolor sit amet consectetur. Vene integer ut integer gravida et sodales.
                     </p>
                 </div>
-            </div> 
+            </div>
 
             <br>
 
@@ -447,21 +470,24 @@
         <footer>
             <div>
                 <p>
-                    Dobande Technologies
-                D43 EMEFS Street, Hillview Estate, Acra, GA, Ghana. 
-                GN-1027-7509
+                    Dobande Technologies <br>
+                    D43 EMEFS Street, Hillview Estate, Acra, GA, Ghana. <br>
+                    GN-1027-7509
                 </p>
             </div>
             <div id="icons">
                 <!-- Icons -->
-                <img src="https://megaquest-s3-bucket.s3.us-east-2.amazonaws.com/email-templates/assets/img/phone.png" alt="Phone">
-                <img src="https://megaquest-s3-bucket.s3.us-east-2.amazonaws.com/email-templates/assets/img/linkedin.png" alt="LinkedIn">
-                <img src="https://megaquest-s3-bucket.s3.us-east-2.amazonaws.com/email-templates/assets/img/twitter.png" alt="Twitter">
+                <img src="https://megaquest-s3-bucket.s3.us-east-2.amazonaws.com/email-templates/assets/img/phone.png"
+                    alt="Phone">
+                <img src="https://megaquest-s3-bucket.s3.us-east-2.amazonaws.com/email-templates/assets/img/linkedin.png"
+                    alt="LinkedIn">
+                <img src="https://megaquest-s3-bucket.s3.us-east-2.amazonaws.com/email-templates/assets/img/twitter.png"
+                    alt="Twitter">
             </div>
         </footer>
     </div>
 
-    
+
 </body>
 
 
